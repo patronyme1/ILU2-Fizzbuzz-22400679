@@ -2,8 +2,10 @@ package fizzbuzz;
 
 public class Game {
 	
+	private int round = 1;
+	
 	public String next() {
-		return "1";
+		return String.format("%d", round++);
 	}
 	
 }
