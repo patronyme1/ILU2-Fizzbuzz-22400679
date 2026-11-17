@@ -76,10 +76,19 @@ class GameTest {
 		assertEquals("FizzBuzz", game.next());
 	}
 	
-	private void tour(int round) {
+	@Test
+	void fullGameTest() {
+		String game = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, FizzBuzz,";
+		assertEquals(game, tour(30));
+	}
+	
+	private String tour(int round) {
+		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < round ; i++) {
-			game.next();
+			sb.append(game.next());
+			sb.append(", ");
 		}
+		return sb.toString().trim();
 	}
 
 }
