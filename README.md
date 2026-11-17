@@ -13,7 +13,7 @@
 - [ ] B22
 
 ## Backlog
-- [ ] Le premier doit répondre "1"
+- [X] Le premier doit répondre "1"
 - [ ] Le second doit répondre "2"
 - [ ] Le troisième doit répondre "Fizz"
 - [ ] Le 4e doit répondre "4"
