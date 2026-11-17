@@ -57,8 +57,7 @@ class GameTest {
 		assertEquals("Fizz", game.next());
 		tour(5);
 		assertEquals("Fizz", game.next());
-		tour(2);
-		assertEquals("Fizz", game.next());
+		// tour 15 retiré pour laisser fizzbuzz
 	}
 	
 	@Test
@@ -71,6 +70,11 @@ class GameTest {
 		assertEquals("Buzz", game.next());
 	}
 	
+	@Test
+	void fizzbuzzTest() {
+		tour(14);
+		assertEquals("FizzBuzz", game.next());
+	}
 	
 	private void tour(int round) {
 		for (int i = 0; i < round ; i++) {

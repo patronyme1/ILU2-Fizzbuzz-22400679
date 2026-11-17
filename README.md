@@ -21,5 +21,5 @@
 - [X] Le 7e, 8e, 11e doivent répondre "7" "8" "11"
 - [X] Le 6e, 12e, 15e doivent répondre "Fizz"
 - [X] Le 10e, 20e, 50e doivent répondre "Buzz"
-- [ ] Le 15e doit répondre "FizzBuzz"
+- [X] Le 15e doit répondre "FizzBuzz"
 - [ ] Les 30 premiers coups produisent la partie complète

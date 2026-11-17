@@ -8,7 +8,7 @@ public class Game {
 	
 	public String next() {
 		String answer = checkForMagic();
-		if (answer == null) {
+		if (answer.isEmpty()) {
 			answer = String.format("%d", round);
 		}
 
@@ -17,13 +17,14 @@ public class Game {
 	}
 	
 	private String checkForMagic() {
+		StringBuilder sb = new StringBuilder();
 		for (int i = 0 ; i < MAGIC_KEYS.length; i++) {
 			if (round % MAGIC_KEYS[i] == 0) {
-				return MAGIC_VALUES[i];
+				sb.append(MAGIC_VALUES[i]);
 			}
 		}
 		
-		return null;
+		return sb.toString();
 	}
 	
 }
