@@ -61,6 +61,17 @@ class GameTest {
 		assertEquals("Fizz", game.next());
 	}
 	
+	@Test
+	void someBuzz() {
+		tour(9);
+		assertEquals("Buzz", game.next());
+		tour(9);
+		assertEquals("Buzz", game.next());
+		tour(29);
+		assertEquals("Buzz", game.next());
+	}
+	
+	
 	private void tour(int round) {
 		for (int i = 0; i < round ; i++) {
 			game.next();
