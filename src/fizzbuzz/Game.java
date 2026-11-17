@@ -18,7 +18,7 @@ public class Game {
 	
 	private String checkForMagic() {
 		for (int i = 0 ; i < MAGIC_KEYS.length; i++) {
-			if (round == MAGIC_KEYS[i]) {
+			if (round % MAGIC_KEYS[i] == 0) {
 				return MAGIC_VALUES[i];
 			}
 		}
